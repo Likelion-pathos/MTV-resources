@@ -6,6 +6,7 @@ import { styled } from "styled-components";
 //다섯번째 pr
 
 //pr1
+//pr2
 
 export const Container = styled.div`
   width: 390px;
