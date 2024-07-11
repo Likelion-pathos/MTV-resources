@@ -3,7 +3,7 @@ from django.urls import path, include
 from .views import PostViewSet
 
 
-post_router = SimpleRouter(trailing_slash=False)
+post_router = SimpleRouter(trailing_slash=True)
 post_router.register('posts', PostViewSet, basename='post')
 
 urlpatterns = [
