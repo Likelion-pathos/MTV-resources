@@ -1,16 +1,19 @@
 import React from "react";
 import * as M from "../styles/styledMain";
 import { useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export function Main() {
   const navigate = useNavigate();
 
   const goLogin = () => {
-    navigate(`/login`);
+    navigate(`/rest-auth/login`);
   };
   const goRegister = () => {
     navigate(`/register`);
   };
+
   return (
     <>
       <M.Container>

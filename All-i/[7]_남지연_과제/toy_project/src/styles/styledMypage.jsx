@@ -22,6 +22,7 @@ export const Bar = styled.div`
     flex-shrink: 0;
     margin-left: 10px;
     margin-top: 11px;
+    cursor: pointer;
   }
 
   #museum {

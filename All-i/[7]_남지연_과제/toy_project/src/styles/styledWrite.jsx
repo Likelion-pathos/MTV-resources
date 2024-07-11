@@ -51,7 +51,7 @@ export const ProfileContainer = styled.div`
   margin-top: 20%;
 `;
 
-export const UserInput = styled.input`
+export const UserInput = styled.div`
   width: 312px;
   height: 40px;
   border: 1px solid #a259ff;
@@ -125,15 +125,22 @@ export const CommentContainer = styled.div`
   flex-shrink: 0;
   margin-left: 44px;
   margin-top: 80px;
-  #detail {
-    color: rgba(255, 255, 255, 0.38);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 13px;
-  }
+`;
+
+export const CommentInput = styled.textarea`
+  width: 220px;
+  height: 200px;
+  color: rgba(255, 255, 255, 0.38);
+  text-align: left;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  border: none;
+  background-color: transparent;
+  margin-top: -90px;
+  resize: none;
 `;
 
 export const Container2 = styled.div`
@@ -200,6 +207,7 @@ export const Help = styled.div`
 
 export const Idea = styled.div`
   margin-top: 80px;
+  cursor: pointer;
 `;
 
 export const Ideation = styled.div`

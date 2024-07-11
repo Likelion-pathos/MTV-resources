@@ -10,11 +10,15 @@ export function BookCommunity() {
     navigate(`/mypage`);
   };
 
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <>
       <B.Container>
         <B.TopBar>
-          <B.BackBtn />
+          <B.BackBtn onClick={goBack} />
           <B.GroupSmall>
             <img src="/images/GroupSmall.svg" alt="GroupSmall" />
           </B.GroupSmall>
