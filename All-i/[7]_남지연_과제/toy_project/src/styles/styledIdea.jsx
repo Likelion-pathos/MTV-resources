@@ -2,21 +2,20 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 390px;
-  height: 844px;
+  height: 5844px;
   margin: 0 auto;
   background: #121212;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: block;
   flex-direction: column;
-  overflow: hidden;
 `;
 
 export const Bar = styled.div`
   display: flex;
   align-items: center;
   gap: 135px;
-  margin-top: -180px;
+  margin-left: 10px;
 `;
 
 export const BackBtn = styled.button`
@@ -28,11 +27,13 @@ export const BackBtn = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
+  margin-top: 15px;
 `;
 
 export const GroupSmall = styled.div`
   width: 45px;
   height: 27px;
+  margin-top: 15px;
 `;
 
 export const MyPage = styled.button`
@@ -43,9 +44,10 @@ export const MyPage = styled.button`
   background-color: transparent;
   border: none;
   outline: none;
+  margin-top: 20px;
 `;
 
-export const UserInput = styled.input`
+export const UserInput = styled.div`
   width: 312px;
   height: 40px;
   border: 1px solid #a259ff;
@@ -60,6 +62,7 @@ export const UserInput = styled.input`
   padding-left: 3px;
   margin-top: 25px;
   margin-bottom: 23px;
+  margin-left: 34px;
 `;
 
 export const Girl = styled.div`
@@ -67,6 +70,7 @@ export const Girl = styled.div`
   height: 195px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
 `;
 
 export const Info1 = styled.div`
@@ -88,7 +92,8 @@ export const Info1 = styled.div`
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    margin-left: 23px;
+    text-align: center;
+    margin-left: 10px;
   }
 
   #date {
@@ -98,7 +103,7 @@ export const Info1 = styled.div`
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 240% */
-    margin-left: 40px;
+    margin-left: 30px;
   }
 `;
 
@@ -112,6 +117,17 @@ export const Book1 = styled.div`
   border: 1px solid #a259ff;
   background: #121212;
   stroke: #a259ff;
+
+  #detail {
+    margin-top: 4px;
+    margin-left: 17px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
 `;
 
 export const Number1 = styled.div`
@@ -128,7 +144,7 @@ export const Number1 = styled.div`
     margin-left: 17px;
     color: rgba(255, 255, 255, 0.5);
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 200% */

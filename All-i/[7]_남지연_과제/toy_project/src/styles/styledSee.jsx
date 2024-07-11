@@ -23,6 +23,7 @@ export const Container = styled.div`
     height: 62px;
     margin-top: 14px;
     flex-shrink: 0;
+    cursor: pointer;
   }
 `;
 

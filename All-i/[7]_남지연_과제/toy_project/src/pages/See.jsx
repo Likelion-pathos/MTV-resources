@@ -9,6 +9,10 @@ const See = () => {
     navigate(`/mypage`);
   };
 
+  const goIdea = () => {
+    navigate(`/idea`);
+  };
+
   return (
     <S.Container>
       <S.TopBar>
@@ -44,7 +48,7 @@ const See = () => {
           <br /> 타인의 해석도 궁금하다면 참고해보세요!!
         </div>
       </S.Help>
-      <img id="Ideabtn" src="/images/Idea.svg" alt="Idea" />
+      <img id="Ideabtn" src="/images/Idea.svg" alt="Idea" onClick={goIdea} />
       <S.Ideation>
         <div id="detail">아이데이션</div>
       </S.Ideation>

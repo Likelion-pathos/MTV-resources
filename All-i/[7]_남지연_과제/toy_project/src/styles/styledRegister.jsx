@@ -2,7 +2,7 @@ import { styled, css } from "styled-components";
 
 export const Container = styled.div`
   width: 390px;
-  height: 2708px;
+  height: 1408px;
   margin: 0 auto;
   background: #121212;
   justify-content: center;

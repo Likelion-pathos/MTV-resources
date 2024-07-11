@@ -1,11 +1,23 @@
 import React from "react";
 import * as MP from "../styles/styledMypage";
+import { useNavigate } from "react-router-dom";
 
 const Mypage = () => {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <MP.Container>
       <MP.Bar>
-        <img id="backbtn" src="/images/BackBtn.svg" alt="backbtn" />
+        <img
+          id="backbtn"
+          src="/images/BackBtn.svg"
+          alt="backbtn"
+          onClick={goBack}
+        />
         <img id="museum" src="/images/Group.svg" alt="museum" />
       </MP.Bar>
       <MP.Image>
