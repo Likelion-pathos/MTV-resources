@@ -5,19 +5,23 @@ import { useNavigate } from "react-router-dom";
 export function CommunityProfile() {
   const navigate = useNavigate();
 
-  const goCommunityProfile = () => {
-    navigate(`/communityprofile`);
+  const goMyPage = () => {
+    navigate(`/mypage`);
+  };
+
+  const goBack = () => {
+    navigate(-1);
   };
 
   return (
     <>
       <C.Container>
         <C.TopBar>
-          <C.BackBtn />
+          <C.BackBtn onClick={goBack} />
           <C.GroupSmall>
             <img src="/images/GroupSmall.svg" alt="GroupSmall" />
           </C.GroupSmall>
-          <C.MyPage />
+          <C.MyPage onClick={goMyPage} />
         </C.TopBar>
         <C.ProfileContainer>
           <C.BlackCirclePurple>

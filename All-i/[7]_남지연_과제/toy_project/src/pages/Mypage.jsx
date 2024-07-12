@@ -9,15 +9,14 @@ const Mypage = () => {
     navigate(-1);
   };
 
+  const goMyPageScrap = () => {
+    navigate(`/mypagescrap`);
+  };
+
   return (
     <MP.Container>
       <MP.Bar>
-        <img
-          id="backbtn"
-          src="/images/BackBtn.svg"
-          alt="backbtn"
-          onClick={goBack}
-        />
+        <MP.BackBtn onClick={goBack}></MP.BackBtn>
         <img id="museum" src="/images/Group.svg" alt="museum" />
       </MP.Bar>
       <MP.Image>
@@ -32,7 +31,12 @@ const Mypage = () => {
           <div id="detail">내 기록</div>
         </MP.Record>
         <MP.Scrap>
-          <img id="photo" src="/images/BookMarkBtn.svg" alt="bookmarkbtn" />
+          <img
+            id="photo"
+            src="/images/BookMarkBtn.svg"
+            alt="bookmarkbtn"
+            onClick={goMyPageScrap}
+          />
           <div id="detail">스크랩</div>
         </MP.Scrap>
       </MP.Select>

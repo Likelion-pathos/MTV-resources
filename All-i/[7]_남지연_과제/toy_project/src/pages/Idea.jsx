@@ -6,10 +6,7 @@ import { useState } from "react";
 
 const Idea = () => {
   const navigate = useNavigate();
-  const [title, setTitle] = useState("");
   const [content, setContent] = useState([]);
-  const [author, setAuthor] = useState("");
-  const [createdAt, setCreatedAt] = useState([]);
 
   const goMypage = () => {
     navigate(`/mypage`);
@@ -41,7 +38,7 @@ const Idea = () => {
         </I.GroupSmall>
         <I.MyPage onClick={goMypage} />
       </I.Bar>
-      <I.UserInput>포에버리즘</I.UserInput>
+      <I.UserInput>포에버리즘: 우리의 세상의 끝으로</I.UserInput>
       {content.map((e) => (
         <I.Girl key={e.id}>
           <I.Info1>

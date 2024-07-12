@@ -106,6 +106,7 @@ export const RecBook1 = styled.div`
   flex-shrink: 0;
   background-image: url("/images/RecBook1.svg");
   margin-left: 15%;
+  cursor: pointer;
 `;
 
 export const RecBook2 = styled(RecBook1)`

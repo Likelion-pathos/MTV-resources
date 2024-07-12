@@ -12,6 +12,7 @@ import { Write } from "./pages/Write";
 import See from "./pages/See";
 import Idea from "./pages/Idea";
 import Mypage from "./pages/Mypage";
+import MypageScrap from "./pages/MypageScrap";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/write" element={<Write />} />
         <Route path="/see" element={<See />} />
         <Route path="/mypage" element={<Mypage />} />
+        <Route path="/mypagescrap" element={<MypageScrap />} />
         <Route path="/idea" element={<Idea />} />
       </Routes>
     </BrowserRouter>

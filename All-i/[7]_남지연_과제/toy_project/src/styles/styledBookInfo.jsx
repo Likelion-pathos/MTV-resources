@@ -43,12 +43,14 @@ export const MyPage = styled.button`
   background-color: transparent;
   border: none;
   outline: none;
+  position: relative;
+  z-index: 999;
 `;
 
 export const ProfileContainer = styled.div`
   display: flex;
   gap: 30px;
-  margin-top: 20%;
+  margin-top: 10%;
 `;
 
 export const BlackCirclePurple = styled.div`
@@ -60,6 +62,7 @@ export const BlackCirclePurple = styled.div`
   background-color: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 `;
 
 export const InfoText = styled.div`
@@ -70,6 +73,8 @@ export const InfoText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  position: relative;
+  z-index: 999;
 `;
 
 export const RecBookContainer = styled.div`
@@ -83,6 +88,8 @@ export const RecBook1 = styled.div`
   height: 161px;
   flex-shrink: 0;
   background-image: url("/images/RecBook1.svg");
+  position: relative;
+  z-index: 999;
 `;
 
 export const BookInfo = styled.div`
@@ -101,10 +108,19 @@ export const BookInfo = styled.div`
   padding-left: 10px;
 `;
 
+export const PinkBlur = styled.div`
+  width: 206px;
+  height: 205px;
+  background-color: #fe3796;
+  filter: blur(159.68670654296875px);
+  position: relative;
+  z-index: 1;
+  margin-bottom: -150px;
+`;
+
 export const ReviewContainer = styled.div`
   display: flex;
   gap: 30px;
-  margin-top: 10%;
   width: 312px;
   height: 350px;
   flex-shrink: 0;
@@ -121,4 +137,6 @@ export const BulbIcon = styled.div`
   border: none;
   outline: none;
   margin: 10px;
+  position: relative;
+  z-index: 999;
 `;

@@ -18,11 +18,15 @@ export function BookInfo() {
     navigate(`/mypage`);
   };
 
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <>
       <B.Container>
         <B.TopBar>
-          <B.BackBtn />
+          <B.BackBtn onClick={goBack} />
           <B.GroupSmall>
             <img src="/images/GroupSmall.svg" alt="GroupSmall" />
           </B.GroupSmall>
@@ -52,6 +56,8 @@ export function BookInfo() {
             구매링크
           </B.BookInfo>
         </B.RecBookContainer>
+        <B.PinkBlur></B.PinkBlur>
+
         <B.ReviewContainer>
           <B.BulbIcon />
           <B.InfoText style={{ margin: "23px 1px 1px -25px" }}>
